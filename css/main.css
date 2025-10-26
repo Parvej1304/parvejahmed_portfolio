@@ -669,3 +669,198 @@ h5 {
     top: 0;
   }
 }
+/* Education Info Styles */
+.education-info {
+  margin: 20px 0;
+  padding: 12px 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.education-icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.7;
+}
+
+/* Contact Info Styles */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.7;
+}
+
+.contact-item a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #007bff;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+  margin-top: 25px;
+}
+
+/* Experience Section */
+.experience {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.experience-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.experience-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.experience-header h3 {
+  color: #333;
+  margin: 0;
+  flex: 1;
+}
+
+.experience-date {
+  background: #007bff;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.company {
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.experience-descr {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: #e9ecef;
+  color: #495057;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Navigation Styles */
+.nav-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-info {
+    margin: 15px 0;
+    padding: 10px;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .experience-date {
+    align-self: flex-start;
+  }
+  
+  .nav-list {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+  
+  .contact-info {
+    align-items: center;
+  }
+}
